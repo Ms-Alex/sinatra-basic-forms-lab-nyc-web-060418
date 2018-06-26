@@ -1,14 +1,14 @@
 class Puppy
 
   attr_accessor :name, :breed, :age
-  @@pupies = []
+  @@puppies = []
 
   def initialize(name, breed, age)
     @name, @breed, @age = name, breed, age
     # params.each do |key, value|
     #   self.send("#{key}=", value)
     # end
-    @@pupies << self
+    @@puppies << self
   end
 
   def self.all
